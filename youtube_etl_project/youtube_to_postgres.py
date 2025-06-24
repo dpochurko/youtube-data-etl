@@ -30,7 +30,7 @@ df = pd.DataFrame(videos)
 
 # PostgreSQL connection
 # PostgreSQL connection
-engine = create_engine("postgresql://postgres:Tackle12@localhost:5432/youtube_data")
+engine = create_engine("postgresql://postgres:password1@localhost:5432/youtube_data")
 
 # Load into PostgreSQL
 df.to_sql("trending_videos", engine, if_exists='append', index=False)
